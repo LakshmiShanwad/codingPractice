@@ -62,6 +62,6 @@ public class KadaneAlgo {
 	}
 
 	public static void main(String[] args) {
-		getSubArrayWithMaxSum(new int[] {-2,-3});
+		getSubArrayWithMaxSum(new int[] {-2,-3,1000,-898});
 	}
 }

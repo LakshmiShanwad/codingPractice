@@ -2,7 +2,7 @@ package testPackage;
 
 public class Valley {
 
-	//this is for counting valleys 
+	//this is for counting total valley
 	
 	
 	
