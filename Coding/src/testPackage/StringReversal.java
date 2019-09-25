@@ -12,6 +12,7 @@ public class StringReversal {
 	public static void main(String[] args) {
 
 		// TODO Auto-generated method stub
+		// THIS IS ADDED THROUGH GITHUB
 
 		String s = "madam";
 		char[] revchar = s.toCharArray();
