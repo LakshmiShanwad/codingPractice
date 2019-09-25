@@ -7,6 +7,7 @@ public class KadaneAlgo {
 	private static void getSubArrayWithMaxSum(int[] inputArray) {
 		// Initializing bestSum to first element of input array and
 		// bestStart and bestEnd to first index i.e 0
+		// KANDANE ALGO
 
 		int bestSum = inputArray[0];
 		int bestStart = 0;
