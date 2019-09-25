@@ -8,6 +8,8 @@ import java.util.Map;
 public class SockMerchant {
 
 	public void pairFinder() {
+		
+		//this is added comment
 
 		int pairs = 0;
 		List<Integer> lst = Arrays.asList(1 ,1 ,3 ,1 ,2 ,1 ,3 ,3 ,3 ,3 );
