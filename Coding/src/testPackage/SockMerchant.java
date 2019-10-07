@@ -9,11 +9,15 @@ public class SockMerchant {
 
 	public void pairFinder() {
 
-		// this comment added from git hub
+		// to find frequecies of any interger 
 
 		int pairs = 0;
+	
 		List<Integer> lst = Arrays.asList(1, 1, 3, 1, 2, 2, 3, 3, 3, 2);
+	
 		Map<Integer, Integer> m = new HashMap<Integer, Integer>();
+		
+		
 		/*
 		 * lst.stream().forEach(i -> { if (m.containsKey(i)) m.put(i, m.get(i) + 1);
 		 * else m.put(i, 1); });
