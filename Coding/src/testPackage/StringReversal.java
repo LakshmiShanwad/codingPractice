@@ -7,19 +7,17 @@ import java.util.ListIterator;
 
 public class StringReversal {
 
-	static String s;
-
-	public static void main(String[] args) {
-
-		// TODO Auto-generated method stub
-		// THIS IS ADDED THROUGH GITHUB
-
-		String s = "madam";
+	public static void normalreversal(String s)
+	{
 		char[] revchar = s.toCharArray();
-		for (int i=0;i<revchar.length;i++)
-		System.out.print(revchar[i]);
+		int len = revchar.length;
+		for (int i = revchar.length; i <=0; i--)
+			System.out.print(revchar[i]);
 		System.out.println("\n");
-	
+
+	}
+
+	public static void genericreversal(String s) {
 		String[] st = s.split(" ");
 
 		for (String str : st) {
@@ -34,6 +32,17 @@ public class StringReversal {
 			System.out.print(" ");
 		}
 
-		}
+	}
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+		// THIS IS ADDED THROUGH GITHUB
+
+		// genericreversal("ashu tosh kumar");
+		System.out.println("\n");
+		normalreversal("ashu tosh");
 
 	}
+
+}
