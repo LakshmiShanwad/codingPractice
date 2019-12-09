@@ -24,6 +24,7 @@ public class Countrepeatedobj {
 				hash1.put(i, 1);
 
 		}
+		System.out.println(" THE NUMBERS ARE WITH FREQUENCY " + hash1);
 		Set<Integer> keys = hash1.keySet();
 		for (int i : keys) {
 			if (hash1.get(i) > 1) {
@@ -50,6 +51,8 @@ public class Countrepeatedobj {
 				cHash.put(ch, 1);
 
 		}
+
+		System.out.println(" THE chararcters ARE WITH FREQUENCY " + cHash);
 		Set<Character> keys = cHash.keySet();
 		for (Character chars : keys) {
 			if (cHash.get(chars) > 1) {
@@ -93,6 +96,7 @@ public class Countrepeatedobj {
 
 		String s = "you myself my and me and you";
 		String s1 = "May God bless me and my friend and not me and me only you are my only friend";
+		// char chars[] = s1.toCharArray();
 		String spiltString[] = s1.split(" ");
 
 		List<String> Wlist = Arrays.asList(spiltString);
