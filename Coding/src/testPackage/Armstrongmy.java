@@ -18,7 +18,8 @@ public class Armstrongmy {
 		}
 		int temorder = n;
 		n = 0;
-
+		System.out.println("the order of the expected number is " + temorder);
+		
 		return temorder;
 
 	}
@@ -42,6 +43,7 @@ public class Armstrongmy {
 			System.out.println("the given num " + c + " is armstrong ");
 		else
 			System.out.println("the given num " + c + " is NOT a armstrong ");
+		System.out.println("\n");
 
 	}
 

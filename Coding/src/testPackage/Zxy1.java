@@ -2,20 +2,21 @@ package testPackage;
 
 public class Zxy1 extends Zxy {
 
-	public void m2() {
+	public  static void m2() {
 		System.out.println("you r in child method m2");
 	}
-	public static void m1() {
-		String s = "in static child class method";
-		System.out.println(s);
+
+	public void m1() {
+		System.out.println("implementing abstract class method m1");
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Zxy ob = new Zxy();
-		ob.m2();
-		m1();
+		Zxy1 obj = new Zxy1();
+		obj.m2();
+		obj.m1();
+		
 
 	}
 }
-

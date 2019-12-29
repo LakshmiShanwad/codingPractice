@@ -1,20 +1,21 @@
 package testPackage;
 
-public class Zxy {
+public abstract class Zxy {
+	
+	static String a; 
 
-	public static void m1() {
-		String s = "in static parent class method";
-		System.out.println(s);
+ public  abstract  void m1();
+
+	public static void m2() {
+
+		a= "this is static variable in abstract class using m2 method";
+		System.out.println(" this is the m2 abstract method" +a);
+	}
+	static
+	{
+		a= "this is a static variable";
+		System.out.println(" this is just a static block in abstrac class" + a);
 	}
 
-	public static void m1(String s1) {
-
-		System.out.println(s1);
-	}
-
-	public void m2() {
-
-		System.out.println(" you r in parent non static mehthod");
-	}
-
+	
 }
