@@ -1,21 +1,32 @@
 package testPackage;
 
-public abstract class Zxy {
-	
-	static String a; 
+import java.util.Arrays;
 
- public  abstract  void m1();
+public class Zxy {
 
-	public static void m2() {
+	static int a;
+	int b = 10;
 
-		a= "this is static variable in abstract class using m2 method";
-		System.out.println(" this is the m2 abstract method" +a);
+	int c[] = { 2, 3, 3, 4 };
+
+	public int nonstaticmeth() {
+		System.out.println("this is non static method using non static variable " + b);
+
+		System.out.println(Arrays.binarySearch(c, 3));
+
+		return b;
+
 	}
-	static
-	{
-		a= "this is a static variable";
-		System.out.println(" this is just a static block in abstrac class" + a);
+
+	public static void staticmethod() {
+
+		Zxy obj = new Zxy();
+		System.out.println(obj.nonstaticmeth());
+		System.out.println("this is direct access of non static in static method " + obj.b);
 	}
 
-	
+	public static void main(String args[]) {
+		staticmethod();
+	}
+
 }

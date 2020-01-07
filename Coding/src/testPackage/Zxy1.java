@@ -1,13 +1,16 @@
 package testPackage;
 
-public class Zxy1 extends Zxy {
+public class Zxy1  {
 
 	public  static void m2() {
-		System.out.println("you r in child method m2");
+		System.out.println("you r in child method m2 of driver class");
+		
 	}
 
 	public void m1() {
 		System.out.println("implementing abstract class method m1");
+
+		
 	}
 
 	public static void main(String[] args) {
