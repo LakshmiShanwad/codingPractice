@@ -1,9 +1,9 @@
 package testPackage;
 
 public class Dictionary {
-	static String s[] = { "ashutosh", "aman", "amita", "aish", "jyothi" ,"pallavi","ashu","zaid"};
+	static String s[] = { "ashutosh", "aman", "amita", "aish", "jyothi", "pallavi", "ashu", "zaid" };
+
 	public static void dic() {
-		
 
 		int count = s.length;
 		String temp;
