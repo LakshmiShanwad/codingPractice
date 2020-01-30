@@ -11,7 +11,7 @@ public class StringReversal {
 	{
 		char[] revchar = s.toCharArray();
 		int len = revchar.length;
-		for (int i = revchar.length; i <=0; i--)
+		for (int i = len-1; i >=0; i--)
 			System.out.print(revchar[i]);
 		System.out.println("\n");
 
@@ -40,6 +40,8 @@ public class StringReversal {
 		// THIS IS ADDED THROUGH GITHUB
 
 		// genericreversal("ashu tosh kumar");
+	
+		genericreversal("ashu tosh");
 		System.out.println("\n");
 		normalreversal("ashu tosh");
 
