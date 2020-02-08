@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class StringReversal {
+	
+	//this is general 
 
 	public static void normalreversal(String s)
 	{
