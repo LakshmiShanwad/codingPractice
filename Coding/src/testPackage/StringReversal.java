@@ -41,7 +41,7 @@ public class StringReversal {
 
 		// genericreversal("ashu tosh kumar");
 	
-		genericreversal("ashu tosh");
+		genericreversal("ashu tosh  kumar singh");
 		System.out.println("\n");
 		normalreversal("ashu tosh");
 
