@@ -13,6 +13,7 @@ public class ArrayRotation {
 		for (i = 0; i < n - 1; i++)
 
 			a[i] = a[i + 1];
+		
 		a[i] = temp;
 
 	}
@@ -26,7 +27,7 @@ public class ArrayRotation {
 		// TODO Auto-generated method stub
 		ArrayRotation ob = new ArrayRotation();
 
-		int a[] = { 1, 2, 3, 4, 5, 6, 7 };
+		int a[] = { 1, 2, 3, 4};
 		int len = a.length;
 		ob.roatearray(a, 2, len);
 		ob.printArray(a, len);

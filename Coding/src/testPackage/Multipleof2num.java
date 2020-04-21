@@ -3,7 +3,7 @@ package testPackage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Eullerproblem1 {
+public class Multipleof2num {
 
 	// Find the sum of all the multiples of 3 or 5 below 1000.
 
@@ -33,6 +33,6 @@ public class Eullerproblem1 {
 	}
 
 	public static void main(String args[]) {
-		method1(14,7,20);
+		method1(14,7,200);
 	}
 }
