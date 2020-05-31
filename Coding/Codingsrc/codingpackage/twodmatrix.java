@@ -34,7 +34,7 @@ public class twodmatrix {
 
 	public static void main(String[] args) {
 		// int n = 3;
-		twoDMatrixPrimePrint(3);
+		twoDMatrixPrimePrint(1265);
 	}
 
 }

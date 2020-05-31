@@ -10,7 +10,7 @@ package stringCoding;
  */
 public class UniqueStringCombination {
 
-	static int count;
+	
 
 	public static boolean shouldswap(char ch[], int start, int current) {
 
@@ -21,7 +21,7 @@ public class UniqueStringCombination {
 
 		}
 
-		count++;
+		
 		return true;
 
 	}
@@ -63,11 +63,11 @@ public class UniqueStringCombination {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String inputString = "abc";
+		String inputString = "aab";
 		char ch[] = inputString.toCharArray();
 		int n = ch.length;
 		findpermutation(ch, 0, n);
-		System.out.println(count);
+		System.out.println();
 
 	}
 

@@ -1,6 +1,7 @@
 package codingpackage;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +15,6 @@ public class CountWordsinString {
 		int pairs = 0;
 		int triplet = 0;
 		int single = 0;
-		
 
 		String spiltString[] = s.split(" ");
 
@@ -29,10 +29,16 @@ public class CountWordsinString {
 				m.put(i, 1);
 		}
 		System.out.println("Status of the Map " + m);
+		int maxvalue = Collections.max(m.values());
+
+		String maxkeyset = Collections.max(m.keySet());
+
+		System.out.println(maxkeyset + " => maximum key");
+		System.out.println(maxvalue + " => maximum value");
 
 		for (int i : m.values()) {
 			if (i % 2 == 0)
-			pairs++;
+				pairs++;
 
 		}
 
@@ -75,6 +81,6 @@ public class CountWordsinString {
 		CountWordsinString obj = new CountWordsinString();
 
 		obj.countingstring("May God bless me and my friend and not me and me only you are my only friend");
-		//obj.repChara("ASHUTOSH");
+		// obj.repChara("ASHUTOSH");
 	}
 }

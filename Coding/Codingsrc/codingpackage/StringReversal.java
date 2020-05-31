@@ -7,7 +7,7 @@ import java.util.ListIterator;
 
 public class StringReversal {
 	
-	//this is general 
+	//this is general  
 
 	public static void normalreversal(String s)
 	{
@@ -45,7 +45,7 @@ public class StringReversal {
 	
 		genericreversal("ashu tosh  kumar singh");
 		System.out.println("\n");
-		normalreversal("ashu tosh");
+		//normalreversal("ashu tosh");
 
 	}
 

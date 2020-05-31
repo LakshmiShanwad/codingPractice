@@ -4,7 +4,7 @@ public class Dictionary {
 	static String s[] = { "ashutosh", "aman", "amita", "aish", "jyothi", "pallavi", "ashu", "zaid" };
 
 	public static void dic() {
-
+ 
 		int count = s.length;
 		String temp;
 		for (int i = 0; i < count; i++) {
