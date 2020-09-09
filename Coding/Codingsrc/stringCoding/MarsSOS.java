@@ -6,27 +6,27 @@ public class MarsSOS {
 		int count = 0;
 		char actualmsg[] = s.toCharArray();
 		StringBuffer sb = new StringBuffer("SOS");
-		StringBuffer temp = new StringBuffer();
 		int length = s.length();
+		char expmsg[] = null;
+		int i = 0;
 		int repeat = length / 3 - 1;
 
 		if (repeat > 0) {
-			for (int i = 0; i < repeat; i++) {
-				temp = sb.append("SOS");
-
+			for (i = 0; i < repeat; i++) {
+				expmsg = sb.append("SOS").toString().toCharArray();
 			}
-			System.out.println(temp);
-			char expmsg[] = sb.append("SOS").toString().toCharArray();
-			for (int i = 0; i < actualmsg.length; i++) {
+
+			for (i = 0; i < actualmsg.length; i++) {
 				if (!(actualmsg[i] == expmsg[i])) {
 					count++;
 				}
 			}
+
 			System.out.println(count);
 		} else {
 
 			char c1[] = sb.toString().toCharArray();
-			for (int i = 0; i < actualmsg.length; i++) {
+			for (i = 0; i < actualmsg.length; i++) {
 				if (!(actualmsg[i] == c1[i])) {
 					count++;
 				}
@@ -40,7 +40,7 @@ public class MarsSOS {
 
 	public static void main(String[] args) {
 
-		sosMessage("SOTSOSSOT");
+		sosMessage("SOTSOTSOTSOO");
 
 	}
 

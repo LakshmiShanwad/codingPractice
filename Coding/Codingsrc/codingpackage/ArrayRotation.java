@@ -27,9 +27,9 @@ public class ArrayRotation {
 		// TODO Auto-generated method stub
 		ArrayRotation ob = new ArrayRotation();
 
-		int a[] = { 1, 2, 3, 4};
+		int a[] = { 1, 2, 3, 4, 5};
 		int len = a.length;
-		ob.roatearray(a, 2, len);
+		ob.roatearray(a, 3, len);
 		ob.printArray(a, len);
 
 	}
