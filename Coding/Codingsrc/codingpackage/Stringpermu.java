@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.SynchronousQueue;
 
-// this code does not handle distinct handle 
+// this code does not handle distinct  
 public class Stringpermu {
 
 	static Set<String> nset = new HashSet<>();

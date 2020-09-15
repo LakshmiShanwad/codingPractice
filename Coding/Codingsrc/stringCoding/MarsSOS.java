@@ -40,7 +40,7 @@ public class MarsSOS {
 
 	public static void main(String[] args) {
 
-		sosMessage("SOTSOTSOTSOO");
+		sosMessage("SOT");
 
 	}
 
