@@ -29,7 +29,7 @@ public class ArrayRotation {
 
 		int a[] = { 1, 2, 3, 4, 5};
 		int len = a.length;
-		ob.roatearray(a, 3, len);
+		ob.roatearray(a, 2, len);
 		ob.printArray(a, len);
 
 	}

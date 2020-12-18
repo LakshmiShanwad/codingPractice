@@ -9,8 +9,7 @@ package stringCoding;
  *
  */
 public class UniqueStringCombination {
-
-	
+	static int c1=0;
 
 	public static boolean shouldswap(char ch[], int start, int current) {
 
@@ -21,52 +20,54 @@ public class UniqueStringCombination {
 
 		}
 
-		
 		return true;
 
 	}
 
 	static void findpermutation(char ch[], int index, int n) {
+		
 		if (index >= n) {
 			System.out.println(ch);
 			return;
 		}
 		for (int i = index; i < n; i++) {
-		
+
 			boolean check = shouldswap(ch, index, i);
-			
+
 			if (check) {
 				
 
 				swap(ch, index, i);
 				findpermutation(ch, index + 1, n);
 				swap(ch, index, i);
+	
 				
 
 			}
 		}
-	
+		
 
 	}
 
 	static void swap(char ch[], int i, int j) {
-
 		
 		char c = ch[i];
 		ch[i] = ch[j];
 		ch[j] = c;
-
+		c1++;
+		System.out.println(c1);
+		
 
 	}
-
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String inputString = "aab";
+		String inputString = "LIYSCK";
 		char ch[] = inputString.toCharArray();
 		int n = ch.length;
 		findpermutation(ch, 0, n);
+		
 		System.out.println();
 
 	}
