@@ -12,12 +12,12 @@ public class SmallpositiveInt {
 
 	static int i, v;
 	// static int a[] = { 1, 3, 6, 4, 1, 2 };
-	static int a[] = { 1,2,5,6, };
+	static int a[] = { 1,2,5,6 };
 	// static int a[] = {-3,-1};
 
 	public static int solution() {
 
-		int temp;
+		/*int temp;
 		for (int i = 0; i < a.length; i++) {
 			for (int j = i + 1; j < a.length; j++) {
 				if (a[i] > a[j]) {
@@ -27,10 +27,9 @@ public class SmallpositiveInt {
 				}
 			}
 		}
-
+*/
 		for (int i = 0; i < a.length - 1; i++) {
-			if (!(a[i + 1] - a[i] >= 0 || (a[i + 1] - a[i]) == 1)) {
-
+			if (!(a[i + 1] - a[i] == 0 || (a[i + 1] - a[i]) == 1)) {
 				v = a[i] + 1;
 
 			} else
