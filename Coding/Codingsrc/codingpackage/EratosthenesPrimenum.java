@@ -9,7 +9,6 @@ public class EratosthenesPrimenum {
 			prime[i] = true;
 
 		}
-
 		for (int p = 2; p * p <= N; p++) {
 			if (prime[p] == true) {
 				for (int i = p * p; i <= N; i += p) {
@@ -17,7 +16,6 @@ public class EratosthenesPrimenum {
 				}
 			}
 		}
-
 		System.out.println("<<<printing prime number::eratosrhenes algo till user defined input >>> " + N + "\n");
 		for (int i = 2; i <= N; i++) {
 			if (prime[i] == true)
@@ -45,14 +43,13 @@ public class EratosthenesPrimenum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int userRange = 10000000;
+		int userRange = 900000000;
 
 		if (userRange < 0 || userRange <= 1) {
 			System.out.println(" can not be negative range or 1 as first prime number starts with 2");
 		} else
-			checkPrime(userRange);
-
-		// naivemethod(10000000);
+			//checkPrime(userRange);
+		 naivemethod(10000000);
 
 	}
 

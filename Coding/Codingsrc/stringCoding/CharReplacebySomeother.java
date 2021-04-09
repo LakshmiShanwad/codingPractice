@@ -7,11 +7,11 @@ public class CharReplacebySomeother {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String temp = "@";
-		String s = "seleneum";
+		String temp = "#";
+		String s = "aebebebereiuheeee";
 		while (s.contains("e")) {
 			s = s.substring(0, s.indexOf("e")) + temp + s.substring(s.indexOf("e") + 1);
-			temp += "@";
+			temp += "#";
 		}
 		System.out.println(" output string " + s);
 	}

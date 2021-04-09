@@ -26,7 +26,7 @@ public class MinSumof2number {
 			for (j = i + 1; j < len; j++) 
 			{
 				sum = a[i] + a[j];
-				if (Math.abs(min_sum) > Math.abs(sum)) 
+				if ((min_sum) > (sum)) 
 				{
 					min_sum = sum;
 					min_i = i;
