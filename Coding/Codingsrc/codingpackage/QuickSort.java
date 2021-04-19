@@ -1,69 +1,115 @@
 package codingpackage;
 
 public class QuickSort {
+	// ascendign order  by devide and conquer rule
+	//choose a pivot point and compare with this pivot point and swap 
 
-	static int partition(int a[],int low , int high) 
-	{
-		int p = a[(low+high)/2];
-		while(low<=high)
-		{
-			int b = a[low];
-			while(a[low]<p)
-			{
+	int partition(int a[], int low, int high) {
+		int p = a[(low + high) / 2];
+		while (low <= high) {
+
+			while (a[low] < p) {
 				low++;
 			}
-			int c = a[high];
-			while(a[high]>p)
-			{
+
+			while (a[high] > p) {
 				high--;
 			}
-			if(low<=high)
-			{
+			if (low <= high) {
 				int temp = a[low];
-				int x=a[low];
-				a[low]= a[high];
-				int y=a[high];
-				a[high]= temp;
+
+				a[low] = a[high];
+
+				a[high] = temp;
 				low++;
 				high--;
-				
+
 			}
 		}
-		
 
 		return low;
-		
-	}
-	static void quickSortRecursion(int a[],int low , int high)
-	{
-		int pi = partition(a, low, high);
-		if(low<pi-1)
-		{//this is for left hand side of pivot
-			quickSortRecursion(a, low, pi-1);
-		}
-		if(pi<high)
-		{// this is for right hand side list
-			quickSortRecursion(a, pi+1, high);
-		}
-	}
-	
-	static void printArray(int a[])
-	{
-		for(int i:a)
-		{
-			System.out.println(" sorted array " + a[i]);
-		}
-	}
-	
 
+	}
+
+	void quickSortRecursion(int a[], int low, int high) {
+		int pi = partition(a, low, high);
+		if (low < pi - 1) {// this is for left hand side of pivot
+			quickSortRecursion(a, low, pi - 1);
+		}
+		if (pi < high) {// this is for right hand side list
+			quickSortRecursion(a, pi, high);
+		}
+	}
+
+	void printArray(int a[]) {
+		int s = 0;
+		for (int i : a) {
+			s = s + i;
+			System.out.println(" sorted array " + i);
+
+		}
+		System.out.println("Sum" + s);
+	}
+
+	
+	int partitionDesc(int a[], int low, int high) {
+		int p = a[(low + high) / 2];
+		while (low <= high) {
+
+			while (a[low] > p) {
+				low++;
+			}
+
+			while (a[high] < p) {
+				high--;
+			}
+			if (low <= high) {
+				int temp = a[low];
+
+				a[low] = a[high];
+
+				a[high] = temp;
+				low++;
+				high--;
+
+			}
+		}
+
+		return low;
+
+	}
+
+	void quickSortRecursionDesc(int a[], int low, int high) {
+		int pi = partitionDesc(a, low, high);
+		if (low < pi - 1) {// this is for left hand side of pivot
+			quickSortRecursionDesc(a, low, pi - 1);
+		}
+		if (pi < high) {// this is for right hand side list
+			quickSortRecursionDesc(a, pi, high);
+		}
+	}
+
+	void printArrayDesc(int a[]) {
+		int s = 0;
+		for (int i : a) {
+			s = s + i;
+			System.out.println(" sorted array desc" + i);
+
+		}
+		System.out.println("Sumv desc" + s);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int a[] = { 1, 45, 14, 15, 9, 4, 67, 2};
+		int a[] = { 5, 1, 6 };
 
 		int len = a.length;
-		quickSortRecursion(a, 0, len-1);
-		printArray(a);
+		QuickSort o = new QuickSort();
+
+		o.quickSortRecursion(a, 0, len - 1);
+		o.printArray(a);
+		o.quickSortRecursionDesc(a, 0, len-1);
+		o.printArrayDesc(a);
 
 	}
 

@@ -33,7 +33,7 @@ public class FirstRepeatedInteger {
 	}
 
 	public static void main(String args[]) {
-		int a[]= {-1,-1,2,2,-1, 3, 4, 5, 4};
+		int a[]= {3, 4, 5, 4};
 		meth(a ,2);
 	}
 
