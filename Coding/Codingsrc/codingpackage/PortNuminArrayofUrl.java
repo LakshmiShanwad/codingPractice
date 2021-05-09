@@ -109,8 +109,10 @@ public class PortNuminArrayofUrl {
 		String inputUrl7[] = { "http://example.com:8181", "https://foo.xyz:9090",
 				"http://www.domain.test/admin?user=admin" };
 		String inputUrl8[] = { "https://foo.com","https://fooew.com","https://foo.com"};
-		portNum(inputUrl8, inputUrl8.length);
-		
+		portNum(inputUrl1, inputUrl1.length);
+		portNum(inputUrl2, inputUrl2.length);
+		portNum(inputUrl3, inputUrl3.length);
+		portNum(inputUrl5, inputUrl5.length);
 		//portNum1(inputUrl7, inputUrl7.length);
 
 	}

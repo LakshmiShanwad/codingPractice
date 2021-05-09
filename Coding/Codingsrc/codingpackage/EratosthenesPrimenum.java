@@ -17,7 +17,7 @@ public class EratosthenesPrimenum {
 			}
 		}
 		System.out.println("<<<printing prime number::eratosrhenes algo till user defined input >>> " + N + "\n");
-		for (int i = 1342; i <= N; i++) {
+		for (int i = 2; i <= N; i++) {
 			if (prime[i] == true)
 				System.out.println(" prime number " + i);
 		}
@@ -43,7 +43,7 @@ public class EratosthenesPrimenum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int userRange = 900000000;
+		int userRange = 9;
 
 		if (userRange < 0 || userRange <= 1) {
 			System.out.println(" can not be negative range or 1 as first prime number starts with 2");

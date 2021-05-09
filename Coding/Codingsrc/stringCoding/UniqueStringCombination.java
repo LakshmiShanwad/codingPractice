@@ -54,22 +54,16 @@ public class UniqueStringCombination {
 		char c = ch[i];
 		ch[i] = ch[j];
 		ch[j] = c;
-		c1++;
-		System.out.println(c1);
-		
-
+		 
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String inputString = "LIYSCK";
+		String inputString = "abc";
 		char ch[] = inputString.toCharArray();
 		int n = ch.length;
 		findpermutation(ch, 0, n);
-		
-		System.out.println();
-
 	}
 
 }

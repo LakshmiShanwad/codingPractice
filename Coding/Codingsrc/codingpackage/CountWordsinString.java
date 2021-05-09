@@ -3,6 +3,7 @@ package codingpackage;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -76,11 +77,45 @@ public class CountWordsinString {
 
 	}
 
+	public void repeatCharLinkHM(String s1) {
+		char c[] = s1.toCharArray();
+
+		System.out.println("the length of word " + c.length);
+
+		// List<char[]> lChar= Arrays.asList(c);
+		Map<Character, Integer> cHash = new LinkedHashMap<Character, Integer>();
+
+		for (Character ch : c) {
+			if (cHash.containsKey(ch)) {
+				cHash.put(ch, cHash.get(ch) + 1);
+
+			} else
+				cHash.put(ch, 1);
+
+		}
+		Set<Character> keys = cHash.keySet();
+		for (Character chars : keys) {
+			if (cHash.get(chars) == 1) {
+
+				System.out.println(chars + "-->> " + cHash.get(chars));
+				break;
+			}
+		}
+		for (Character chars1 : keys) {
+			if (cHash.get(chars1) > 1) {
+
+				System.out.println("first repetative is >>  " + chars1 +  " -->> " + cHash.get(chars1));
+				break;
+			}
+		}
+	}
+
 	public static void main(String args[]) {
 
 		CountWordsinString obj = new CountWordsinString();
 
-		obj.countingstring("May God bless me and my friend and not me and me only you are my only friend");
-		// obj.repChara("ASHUTOSH");
+		obj.countingstring("Javav");
+		obj.repChara("ASHUTOSH");
+		obj.repeatCharLinkHM("javavsacyasgcysucvsaghcasjhasyhascgtjhasyccascaysci8iscyshjjcgsaggsdgsdvysgdsdhvsdjyvjhsdgjhsaagjyayysgjahsvjhasfgashashjcascgjashvhajshjasfhasfchjasfchjasvchjaschjsachajschascvhjasjhsachjasjhascjhjanbbnaghsachgsc nbasvhcs");
 	}
 }

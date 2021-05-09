@@ -1,7 +1,7 @@
 package codingpackage;
 
 public class QuickSort {
-	// ascendign order  by devide and conquer rule
+	// ascendign order  by divide and conquer rule
 	//choose a pivot point and compare with this pivot point and swap 
 
 	int partition(int a[], int low, int high) {
@@ -93,7 +93,7 @@ public class QuickSort {
 		int s = 0;
 		for (int i : a) {
 			s = s + i;
-			System.out.println(" sorted array desc" + i);
+			System.out.print(" sorted array desc" + i);
 
 		}
 		System.out.println("Sumv desc" + s);
