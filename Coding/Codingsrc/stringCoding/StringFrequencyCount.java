@@ -26,13 +26,14 @@ public class StringFrequencyCount {
 
 			int maxcount = 0;
 			char maxChar = 0;
+			int a[]= new int[hash.size()];
 			for (Map.Entry<Character, Integer> entry : hash.entrySet()) {
 				if (entry.getValue() > maxcount) {
 					maxcount = entry.getValue();
 					maxChar = entry.getKey();
 
 				}
-				System.out.println("set" + entry);
+				System.out.println( entry);
 			}
 	
 			System.out.println(maxChar + " frequency  " + maxcount);
@@ -44,7 +45,7 @@ public class StringFrequencyCount {
 		List<Integer> l = Arrays.asList(1, 2, 4, 5, 6);
 		int a[] = { 3, 6, 8, 9, 21 };
 		StringFrequencyCount obj = new StringFrequencyCount();
-		obj.freqchar("my name is ashutosh");
+		obj.freqchar("sss ased");
 	}
 
 }

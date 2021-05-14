@@ -29,7 +29,7 @@ public class Armstrongmy {
 		int p = po;
 		while (num > 0) {
 			temp = num % 10;
-			int exp = (int) (Math.pow(temp, p));
+			int exp = (int) (Math.pow(temp, po));
 
 			sum += exp;
 			num = num / 10;

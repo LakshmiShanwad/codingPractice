@@ -6,7 +6,7 @@ public class FetchNumersFromString {
 
 	static int method(String str) {
 
-		String s1 = str.replaceAll("[^0-9]", "");
+		String s1 = str.replaceAll("[^0-9]", "").trim();
 		for (int i = 0; i < s1.length(); i++) {
 			sum += Character.getNumericValue(s1.charAt(i));
 		}

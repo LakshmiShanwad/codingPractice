@@ -32,7 +32,7 @@ public class Stringpermu {
 	public static void distinctcomb(char s[], int i, int n) {
 		if (i == n) {
 			if (!(nset.contains(String.copyValueOf(s)))) 
-				;
+				
 			nset.add(String.copyValueOf(s));
 			System.out.println(s)	;
 

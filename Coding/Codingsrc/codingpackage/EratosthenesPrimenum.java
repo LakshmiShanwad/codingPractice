@@ -1,7 +1,11 @@
 package codingpackage;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class EratosthenesPrimenum {
 
+ 
 	static void checkPrime(int N) {
 		System.out.println(" ");
 		boolean prime[] = new boolean[N + 1];

@@ -12,7 +12,6 @@ public class FactorialRec {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		System.out.println(method(10));
 	}
