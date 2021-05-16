@@ -13,14 +13,6 @@ public class HCFandLCM {
 	// Driver method
 	public static void main(String[] args) {
 
-		// @SuppressWarnings("resource")
-		/*
-		 * Scanner objscn = new Scanner(System.in);
-		 * System.out.println("ENTER THE FIRST NUMBER "); float num1 =
-		 * objscn.nextFloat(); System.out.println("ENTER THE Second NUMBER "); float
-		 * num2 = objscn.nextFloat(); System.out.println(" the entered numbers are " +
-		 * num1 + " AND " + num2);
-		 */
 		int a = 0, b = 2;
 		// HCF*LCM = a*b
 		System.out.println("hcf SHORT" + gcd(a, b));
