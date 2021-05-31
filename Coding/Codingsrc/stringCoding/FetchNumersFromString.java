@@ -16,6 +16,8 @@ public class FetchNumersFromString {
 
 	public static void main(String args[]) {
 		System.out.println(" the sums is " + method("124susdgvs124sdbkhkhhdsk124"));
+		String s= "ashhu";
+		String s1=s+"tosdd";
 
 	}
 

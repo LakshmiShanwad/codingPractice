@@ -12,7 +12,6 @@ public class RandomNumberSum100 {
 
 			if (firstNum == 0 || SecNum == 0 || ThreeNum == 0 || FifthNum == 0 | FourthNum == 0) {
 				continue;
-
 			}
 
 			else if ((firstNum + SecNum + ThreeNum + FifthNum + FourthNum) == 100) {

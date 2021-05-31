@@ -114,8 +114,8 @@ public class CountWordsinString {
 
 		CountWordsinString obj = new CountWordsinString();
 
-		obj.countingstring("Javav");
+		//obj.countingstring("Javav");
 		obj.repChara("ASHUTOSH");
-		obj.repeatCharLinkHM("javavsacyasgcysucvsaghcasjhasyhascgtjhasyccascaysci8iscyshjjcgsaggsdgsdvysgdsdhvsdjyvjhsdgjhsaagjyayysgjahsvjhasfgashashjcascgjashvhajshjasfhasfchjasfchjasvchjaschjsachajschascvhjasjhsachjasjhascjhjanbbnaghsachgsc nbasvhcs");
+		obj.repeatCharLinkHM("ASHUTOSH");
 	}
 }

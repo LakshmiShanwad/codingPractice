@@ -1,10 +1,19 @@
 package practiceonly;
 
+class Test2 extends test3 {
 
-
-abstract class Test2{
-	public void myabstractMethod()
+	 
+	public void drive()
 	{
-		System.out.println("abstract methods");
+		System.out.println(" test 2 class");
+	}
+	
+
+	public static void main(String args[]) {
+		
+		Test2 o = new Test2();
+		o.getObj().drive();
+	 
+		 
 	}
 }

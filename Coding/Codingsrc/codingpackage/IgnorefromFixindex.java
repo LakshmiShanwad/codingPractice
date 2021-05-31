@@ -1,8 +1,6 @@
 package codingpackage;
 
-import java.util.HashSet;
-import java.util.Set;
-
+ 
 public class IgnorefromFixindex {
 
 	// sum all by ignoring only 6 between 9th
@@ -33,6 +31,7 @@ public class IgnorefromFixindex {
 		int a[] = { 2, 6, 7, 9, 1, 6, 3, 9, 10 };
 
 		method(a);
+		
 
 	}
 
