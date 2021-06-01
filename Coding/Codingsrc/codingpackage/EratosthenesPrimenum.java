@@ -40,7 +40,7 @@ public class EratosthenesPrimenum {
 
 		for (int i = 2; i <= N; i++) {
 			if (isPrime(i))
-				System.out.println(" Naive method" + i);
+				System.out.println(" Naive method  " + i);
 		}
 	}
 

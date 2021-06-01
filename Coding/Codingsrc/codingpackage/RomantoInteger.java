@@ -66,7 +66,7 @@ public class RomantoInteger {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String roman = "XII";
+		String roman = "IV";
 		RomantoInteger obj = new RomantoInteger();
 		System.out.println(obj.romanintvalue(roman));
 

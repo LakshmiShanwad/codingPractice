@@ -16,7 +16,7 @@ public class BinarySearchAlgo {
 		int a11[] = { 6, 7, 341, 21, 3 };
 		Arrays.sort(a11);
 		for (int b : a11)
-			System.out.println(b);
+			System.out.print(b + " ");
 		int a[] = { 1, 11, 12 };
 		// int a[]= {12,11,10,9,8,7,6,5};
 

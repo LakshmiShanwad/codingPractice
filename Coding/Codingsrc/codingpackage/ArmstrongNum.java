@@ -2,7 +2,6 @@ package codingpackage;
 
 
 
-
 public class ArmstrongNum {
 
 	int power(int x, long y) {
