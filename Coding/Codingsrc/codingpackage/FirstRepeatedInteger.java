@@ -2,6 +2,7 @@ package codingpackage;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -15,6 +16,7 @@ public class FirstRepeatedInteger {
 	
 
 	static Set<Integer> setobj = new HashSet<>();
+	
 
 	public static void meth(int a[], int b )
 

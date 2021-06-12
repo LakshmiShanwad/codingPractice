@@ -1,6 +1,7 @@
 package codingpackage;
 
 public class DivideTillUnitdigit {
+	
 	 
 	static int unitSum(int input) { 
 		int tsum=0;

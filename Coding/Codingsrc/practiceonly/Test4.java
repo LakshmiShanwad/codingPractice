@@ -5,12 +5,13 @@ import java.util.List;
 
 public abstract class Test4 {
 
-	public abstract void meth1();
+	public abstract void Ameth1();
 
-	public abstract void meth2();
-
-	public void method2() {
-		System.out.println("ashutosh");
+	public static void Amethod2()
+	{
+		System.out.println(" abstract method 2");
 	}
+
+
 
 }

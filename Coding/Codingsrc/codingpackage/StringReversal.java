@@ -17,10 +17,11 @@ public class StringReversal {
 		for (int i = len-1; i >=0; i--)
 		{
 			System.out.print(revchar[i]);
-		System.out.println("\n");
+		//
 		rev+=s.charAt(i);
 		
 		}
+		System.out.println("\n");
 		System.out.println("reverse using "+ rev);
 
 	}
@@ -50,7 +51,7 @@ public class StringReversal {
 
 		// genericreversal("ashu tosh kumar");
 	
-		genericreversal("ashu tosh  kumar singh");
+////		genericreversal("ashu tosh  kumar singh");
 		System.out.println("\n");
 		normalreversal("ashu tosh");
 

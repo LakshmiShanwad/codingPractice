@@ -1,19 +1,12 @@
 package practiceonly;
 
-class Test2 extends test3 {
+class Test2 extends Test3
+{
 
-	 
-	public void drive()
-	{
-		System.out.println(" test 2 class");
+	@Override
+	public void Ameth1() {
+		System.out.println(" Test 2 class overiding Test3 class overiding Ameth1");
+		
 	}
 	
-
-	public static void main(String args[]) {
-		
-		Test2 o = new Test2();
-		o.getObj().drive();
-	 
-		 
-	}
 }

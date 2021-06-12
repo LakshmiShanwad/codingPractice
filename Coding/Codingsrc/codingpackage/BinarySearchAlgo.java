@@ -12,15 +12,11 @@ public class BinarySearchAlgo {
 	//
 
 	public static void main(String args[]) {
-		Set<String> a1 = new HashSet<String>();
-		int a11[] = { 6, 7, 341, 21, 3 };
-		Arrays.sort(a11);
-		for (int b : a11)
-			System.out.print(b + " ");
+	
 		int a[] = { 1, 11, 12 };
-		// int a[]= {12,11,10,9,8,7,6,5};
+		
 
-		int sr = 12;
+		int sr = -11;
 		int li = 0, hi = a.length - 1;
 		int mi = (li + hi) / 2;
 

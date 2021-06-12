@@ -14,10 +14,9 @@ public class SmallestNumberWhoseSumequaltoInput {
 	}
 
 	static int small(int N) {
-		int a = method(N);
 		for (int i = N + 1;; i++) {
 
-			if (a == method(i)) {
+			if (method(N) == method(i)) {
 				return i;
 			}
 		}
@@ -25,7 +24,7 @@ public class SmallestNumberWhoseSumequaltoInput {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(small(1000));
+		System.out.println(small(553));
 
 	}
 

@@ -1,7 +1,9 @@
 package practiceonly;
 
-public class Ds {
+public class Ds extends Throwable{
 
+	
+	
 	
 }
 	
