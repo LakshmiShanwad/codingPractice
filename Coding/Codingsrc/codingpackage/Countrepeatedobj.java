@@ -12,7 +12,7 @@ public class Countrepeatedobj {
 	public void repeatobj() {
 
 		System.out.println("<<<this wil print repeated numbers only>>>");
-		int array[] = { 1, 2, 3, 4, 5, 6, 1, 2, };
+		int array[] = { 1, 2, 3, 4, 5, 6, 1, 2};
 
 		HashMap<Integer, Integer> hash1 = new HashMap<>();
 
