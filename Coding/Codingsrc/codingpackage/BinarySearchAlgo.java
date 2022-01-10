@@ -11,31 +11,38 @@ public class BinarySearchAlgo {
 	// searched value and re adjuting the middle index again
 	//
 
+    static  int index = -1;
+
+    public static int bSearch(int a[],int low,int high, int x)
+    {
+
+        while (low<=high)
+        {
+            int mid = low+((high-low)/2);
+            if(x>a[mid]){
+                low=mid+1;}
+            else if(x<a[mid]){
+                high=mid-1;}
+            else if(x==a[mid])
+            {
+                index=mid;
+                break;
+            }
+
+
+        }
+        if(low> high){
+            System.out.println(" element not found ");
+        }
+        return index;
+    }
 	public static void main(String args[]) {
-	
-		int a[] = { 1, 11, 12 };
+		 int[] array = {5,10,156};
+	        int low = 0 ;
+	        int high = array.length-1;
+	        int x =156;
+	        System.out.println(bSearch(array,low,high,x));
 		
-
-		int sr = -11;
-		int li = 0, hi = a.length - 1;
-		int mi = (li + hi) / 2;
-
-		while (li <= hi) {
-			if (a[mi] == sr) {
-				System.out.println(" element found at index " + li);
-				break;
-			} else if (a[mi] < sr) {
-				li = mi + 1;
-			} else {
-				hi = mi - 1;
-			}
-			mi = (li + hi) / 2;
-		}
-
-		if (li > hi) {
-			System.out.println(" element not found");
-		}
-
 	}
-
+	
 }
