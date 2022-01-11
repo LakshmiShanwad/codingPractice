@@ -34,13 +34,13 @@ public class BinarySearchAlgo {
         if(low> high){
             System.out.println(" element not found ");
         }
-        return index;
+        return -1;
     }
 	public static void main(String args[]) {
 		 int[] array = {5,10,111,156};
 	        int low = 0 ;
 	        int high = array.length-1;
-	        int x =156;
+	        int x =15;
 	        System.out.println(bSearch(array,low,high,x));
 		
 	}
