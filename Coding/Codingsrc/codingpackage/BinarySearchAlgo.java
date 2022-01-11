@@ -11,7 +11,7 @@ public class BinarySearchAlgo {
 	// searched value and re adjuting the middle index again
 	//
 
-    static  int index = -1;
+    
 
     public static int bSearch(int a[],int low,int high, int x)
     {
@@ -23,10 +23,10 @@ public class BinarySearchAlgo {
                 low=mid+1;}
             else if(x<a[mid]){
                 high=mid-1;}
-            else if(x==a[mid])
+            else  
             {
-                index=mid;
-                break;
+            	return mid;
+                 
             }
 
 
@@ -37,7 +37,7 @@ public class BinarySearchAlgo {
         return index;
     }
 	public static void main(String args[]) {
-		 int[] array = {5,10,156};
+		 int[] array = {5,10,111,156};
 	        int low = 0 ;
 	        int high = array.length-1;
 	        int x =156;
