@@ -36,7 +36,7 @@ public class QuickSort {
 		if (low < pi - 1) {// this is for left hand side of pivot
 			quickSortRecursion(a, low, pi - 1);
 		}
-		if (pi < high) {// this is for right hand side list
+		if (high>pi) {// this is for right hand side list
 			quickSortRecursion(a, pi, high);
 		}
 	}
@@ -45,9 +45,13 @@ public class QuickSort {
 		int s = 0;
 		for (int i : a) {
 			s = s + i;
-			System.out.println(" sorted array " + i);
+			System.out.print( i +  ",") ;
 
 		}
+
+
+
+
 		System.out.println("Sum" + s);
 	}
 
@@ -108,8 +112,8 @@ public class QuickSort {
 
 		o.quickSortRecursion(a, 0, len - 1);
 		o.printArray(a);
-		o.quickSortRecursionDesc(a, 0, len-1);
-		o.printArrayDesc(a);
+		//o.quickSortRecursionDesc(a, 0, len-1);
+		//o.printArrayDesc(a);
 
 	}
 

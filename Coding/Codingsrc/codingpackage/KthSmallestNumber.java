@@ -49,13 +49,8 @@ public class KthSmallestNumber {
 		// TODO Auto-generated method stub
 		int k = 3;
 		int a[] = { 1, 7, 10, 4, 3, 20, 15 };
-		int user=1;
-		if(user==1)
-		
 		System.out.println(kthnumber(a, a.length, k));
-		
-		else 
-			System.out.println(ksmallnumber(a, a.length, k));
+		System.out.println(ksmallnumber(a, a.length, k));
 			
 
 	}
