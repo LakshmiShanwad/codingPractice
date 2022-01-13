@@ -1,8 +1,7 @@
 package codingpackage;
 
 public class Dictionary {
-	static String s[] = { "ashutosh", "amaan", "amita", "_Komal", "aish", "jyothi", "pallavi", "ashukumar", "zaid",
-			"komal" };
+	static String s[] = { "ashutosh","Ashutosh","#ashutosh" ,"ashu"};
 
 	public static void dic() {
 
