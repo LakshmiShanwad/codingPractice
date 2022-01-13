@@ -2,7 +2,8 @@ package codingpackage;
 
 public class QuickSort {
 	// ascendign order  by divide and conquer rule
-	//choose a pivot point and compare with this pivot point and swap 
+	//choose a pivot point and compare with this pivot point and swap
+	//test comment
 
 	int partition(int a[], int low, int high) {
 		int p = a[(low + high) / 2];
