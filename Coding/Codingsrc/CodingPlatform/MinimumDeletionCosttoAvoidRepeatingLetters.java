@@ -1,8 +1,8 @@
-package leetCode;
+package CodingPlatform;
 
 public class MinimumDeletionCosttoAvoidRepeatingLetters {
 
-	public int costofdeletion(String s, int[] cost) {
+	public static int costofdeletion(String s, int[] cost) {
 		int totalCost = 0;
 		char prev = s.charAt(0);
 		int maxCost = cost[0];

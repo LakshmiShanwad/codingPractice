@@ -1,4 +1,4 @@
-package leetCode;
+package CodingPlatform;
 
 /*Given an array of positive integers nums,return the maximum possible sum of an ascending subarray in nums.
 
