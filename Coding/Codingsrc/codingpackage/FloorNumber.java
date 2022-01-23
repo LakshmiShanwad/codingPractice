@@ -15,7 +15,7 @@ public class FloorNumber {
         while(low<=high)
         {
             int mid = low + ((high-low)/2);
-            if(a[mid]>target)
+            if(target<a[mid])
             {
                 high=mid-1;
 

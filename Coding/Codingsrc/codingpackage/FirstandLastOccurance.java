@@ -55,7 +55,7 @@ public class FirstandLastOccurance {
     }
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        int input[]= {5,7,7,8,8,10};
+        int input[]= {5,7,7};
         int target=7;
         for (int i=0;i<searchRange(input,target).length;i++){
         System.out.println(searchRange(input,target)[i]);}

@@ -28,7 +28,7 @@ public class IgnorefromFixindex {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[] = { 2, 6, 7, 9, 1, 6, 3, 9, 10 };
+		int a[] = { 2, 6, 7, 9, 1 };
 
 		method(a);
 		

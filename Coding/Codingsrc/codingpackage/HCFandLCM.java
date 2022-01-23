@@ -13,7 +13,7 @@ public class HCFandLCM {
 	// Driver method
 	public static void main(String[] args) {
 
-		int a = 0, b = 2;
+		int a =4 ,b = 2;
 		// HCF*LCM = a*b
 		System.out.println("hcf SHORT" + gcd(a, b));
 		System.out.println("lcm of number " + (a * b) / (gcd(a, b)));
