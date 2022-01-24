@@ -2,8 +2,6 @@ package ArrayProgram;
 
 public class FindlargestNumber {
     // Find largest number without using sorting
-
-
     static int findLargest(int[] a) {
         if (a.length == 1) {
             return a[a.length - 1];
