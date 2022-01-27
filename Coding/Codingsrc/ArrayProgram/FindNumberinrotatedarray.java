@@ -3,7 +3,7 @@ package ArrayProgram;
 public class FindNumberinrotatedarray {
 
 /*    search the number's index in an circular array'
-* {4,5,6,7,1,2};
+* {4,5,6,7,1,2}; leet code 33
 * */
 
     public static  int searchNumber(int[] arr,int target)
