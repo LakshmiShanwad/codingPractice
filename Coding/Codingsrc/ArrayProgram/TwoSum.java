@@ -16,7 +16,7 @@ public class TwoSum {
 
         for(int i=0;i<nums.length;i++)
         {
-           int tmp =
+           int tmp =0;
         }
 
         return  null;

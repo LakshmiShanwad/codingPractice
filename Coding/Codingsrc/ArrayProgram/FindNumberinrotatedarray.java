@@ -51,4 +51,5 @@ public class FindNumberinrotatedarray {
         System.out.println(searchNumber(array,tar));
 
     }
+
 }
