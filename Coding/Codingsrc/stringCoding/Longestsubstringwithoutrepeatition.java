@@ -31,6 +31,6 @@ public class Longestsubstringwithoutrepeatition {
     }
 
     public static void main(String[] args) {
-        System.out.println(lengthoflongSubstring("cbhacaycvacavcsajscgajscbasgjcasgcajscuagsbcasgcvsycgcvgchygwjvcvwcvwecfwjhecvhjwjvcvwcvwegchjw"));
+        System.out.println(lengthoflongSubstring("abcb"));
     }
 }

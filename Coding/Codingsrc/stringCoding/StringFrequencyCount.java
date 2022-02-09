@@ -8,7 +8,7 @@ import java.util.Map;
 public class StringFrequencyCount {
 	HashMap<Character, Integer> hash = new HashMap<>();
 
-	void freqchar(String s) {
+	public void freqchar(String s) {
 		char ch[] = s.replaceAll("\\s+", "").toCharArray();
 
 		if (ch.length == 0) {
@@ -26,7 +26,6 @@ public class StringFrequencyCount {
 
 			int maxcount = 0;
 			char maxChar = 0;
-			int a[]= new int[hash.size()];
 			for (Map.Entry<Character, Integer> entry : hash.entrySet()) {
 				if (entry.getValue() > maxcount) {
 					maxcount = entry.getValue();

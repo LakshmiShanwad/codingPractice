@@ -32,7 +32,7 @@ public class BackSpaceInString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(newString("ab#c#D"));
+		System.out.println(newString("ab#c#D#3"));
 		List<Integer> ls = new LinkedList<Integer>();
 		/*System.out.println(newString("abc#d##c"));
 		System.out.println(newString("######"));
