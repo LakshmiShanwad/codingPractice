@@ -49,10 +49,6 @@ public class QuickSort {
 			System.out.print( i +  ",") ;
 
 		}
-
-
-
-
 		System.out.println("Sum" + s);
 	}
 
@@ -106,7 +102,7 @@ public class QuickSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int a[] = { 5, 1, 6 };
+		int a[] = { 5, 1, 6 ,2};
 
 		int len = a.length;
 		QuickSort o = new QuickSort();

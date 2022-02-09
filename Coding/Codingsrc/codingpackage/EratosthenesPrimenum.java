@@ -53,7 +53,7 @@ public class EratosthenesPrimenum {
 			System.out.println(" can not be negative range or 1 as first prime number starts with 2");
 		} else
 			checkPrime(2100000);
-		  naivemethod(10);
+		 /// naivemethod(10);
 
 	}
 
