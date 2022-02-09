@@ -2,26 +2,22 @@ package codingpackage;
 
 public class MissingNumfromSortedArray {
 
-	public static void method(int[] a, int len) {
-		for (int i = 0; i < a.length - 1; i++) {
-
-			if (a[i + 1] - a[i] > 1) {
-				int b = a[i + 1] - a[i];
-				while (b < a[i + 1]) {
-					System.out.println(" missing number " + b);
-
-				}
-
-			}
+	public static int missingNum(int array[] , int n)
+	{
+		int sumofNnumber = (n*(n+1))/2;
+		int sumofavailableNumber = 0;
+		for(int i=0;i<array.length;i++)
+		{
+			sumofavailableNumber+=array[i];
 		}
+
+
+		return sumofNnumber-sumofavailableNumber;
 	}
 
 	public static void main(String[] args) {
-		int a[] = { 1, 2, 4, 6, 8, 13, 14, 15 };
-		int len = a.length;
-		method(a, len);
-
-		Object ab = new Object();
+		int[] input = {8,7,1,2,4,3,5};
+		System.out.println(missingNum(input,8));
 	}
 
 }
