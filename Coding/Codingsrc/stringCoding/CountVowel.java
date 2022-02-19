@@ -35,7 +35,7 @@ public class CountVowel {
     }
 
     public static void main(String[] args) {
-        String input = "bcecea";
+        String input = "bceceagfzzyfhxbvtga";
         countVowel(input);
 
     }
