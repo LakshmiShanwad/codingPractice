@@ -49,7 +49,7 @@ public class QuickSort {
 			System.out.print( i +  ",") ;
 
 		}
-		System.out.println("Sum" + s);
+		//System.out.println("Sum" + s);
 	}
 
 	

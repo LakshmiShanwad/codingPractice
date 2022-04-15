@@ -64,9 +64,9 @@ public class FindlargestNumber {
     }
 
     public static void main(String args[]) {
-        System.out.println(findLargest(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
-        System.out.println(secondLargest(new int[]{100, 25485, -987455455}));
-        System.out.println(threeLargest(new int[]{-8, 10, 1, 2}));
+       // System.out.println(findLargest(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
+      //  System.out.println(secondLargest(new int[]{100, 25485, -987455455}));
+        System.out.println(threeLargest(new int[]{9,8,7}));
 
     }
 }

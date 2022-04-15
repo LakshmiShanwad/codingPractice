@@ -1,5 +1,7 @@
 package codingpackage;
 
+import org.bouncycastle.mozilla.SignedPublicKeyAndChallenge;
+
 public class BinarySearchAlgo {
 
     // binary search is for the sorted array
@@ -25,6 +27,8 @@ public class BinarySearchAlgo {
         }
         return -1;
     }
+
+
 
     public static void main(String[] args) {
         int[] array = {5, 10, 15 ,20};
