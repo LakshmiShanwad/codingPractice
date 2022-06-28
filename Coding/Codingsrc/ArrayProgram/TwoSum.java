@@ -1,5 +1,6 @@
 package ArrayProgram;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,16 +10,30 @@ You may assume that each input would have exactly one solution,
 and you may not use the same element twice. You can return the answer in any order.*/
 public class TwoSum {
 
-    public static  int[] twoSum(int[] nums, int target) {
+    public  static int[] output(int[] input, int target) {
+        Map<Integer, Integer> hm = new HashMap<>();
 
-        Map<Integer,Integer> hmap = new HashMap<>();
-        int[] result= new int[2];
+        for (int i = 0; i < input.length; i++) {
+            int diff = Math.abs(target - input[i]);
+            if ((hm.containsKey(diff)))
+            {
+                int ot[] = new int[2];
+                ot[0] = i;
+                ot[1] = hm.get(diff);
+                return ot;
+            }
 
-        for(int i=0;i<nums.length;i++)
-        {
-           int tmp =0;
+            hm.put(input[i], i);
+
+
         }
+        return new int[]{-1,-1};
+    }
 
-        return  null;
+    public static void main(String[] args) {
+        int[] input = new int[]{2,3,5};
+        int res[]=output(input,2);
+        System.out.println(res[0] + "   " + res[1]);
+
     }
 }

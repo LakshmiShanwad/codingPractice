@@ -30,7 +30,7 @@ public class Segregate0and1 {
 
 
     public static void main(String[] args) {
-        int[] input = {0,1,1,1,0};
+        int[] input = {0,1,1,1,0,0,1,1,0,2};
         segregate(input);
         for (int i=0;i<input.length;i++)
         {
