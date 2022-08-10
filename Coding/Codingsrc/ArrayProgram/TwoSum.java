@@ -23,7 +23,7 @@ public class TwoSum {
                 return ot;
             }
 
-            hm.put(input[i], i);
+            hm.put(i,input[i]);
 
 
         }
@@ -32,7 +32,7 @@ public class TwoSum {
 
     public static void main(String[] args) {
         int[] input = new int[]{2,3,5};
-        int res[]=output(input,2);
+        int res[]=output(input,5);
         System.out.println(res[0] + "   " + res[1]);
 
     }

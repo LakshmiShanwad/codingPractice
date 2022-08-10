@@ -1,7 +1,7 @@
 package codingpackage;
 
 public class QuickSort {
-	// ascendign order  by divide and conquer rule
+	// ascending order  by divide and conquer rule
 	//choose a pivot point and compare with this pivot point and swap
 
 
