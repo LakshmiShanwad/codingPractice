@@ -34,6 +34,6 @@ public class CountCharFrequency {
 
     public static void main(String[] args) {
 
-        System.out.println("Required output is " + "\n" + countCharacter("aa"));
+        System.out.println("Required output is " + "\n" + countCharacter("aab"));
     }
 }

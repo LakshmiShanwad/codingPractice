@@ -1,5 +1,10 @@
 package ArrayProgram;
 
+import org.jetbrains.annotations.Contract;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class FindlargestNumber {
     // Find largest number without using sorting
     static int findLargest(int[] a) {
@@ -14,6 +19,21 @@ public class FindlargestNumber {
             }
         }
         return n;
+    }
+
+    // find largest using LIST
+
+    static int findLargest(List<Integer> ls) {
+        int n = Integer.MIN_VALUE;
+        for (Integer a : ls
+        ) {
+            if (a > n) {
+                n = a;
+            }
+
+        }
+        return n;
+
     }
 
     // Find Second largest number without using sorting
@@ -63,10 +83,29 @@ public class FindlargestNumber {
 
     }
 
+
+
+    public static int findMin(int[] arr) {
+        int n = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < n) {
+                n = arr[i];
+            }
+        }
+        return n;
+    }
+
     public static void main(String args[]) {
-       // System.out.println(findLargest(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
-      //  System.out.println(secondLargest(new int[]{100, 25485, -987455455}));
-        System.out.println(threeLargest(new int[]{9,8,7}));
+        System.out.println(" Find laregst value is  >>>>>>> " + findLargest(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
+        System.out.println(" Find 2nd largest value is  >>>>>>> " + secondLargest(new int[]{100, 25485, -987455455}));
+        System.out.println(" Find 3rd largest value is  >>>>>>> " + threeLargest(new int[]{9, 8, 7}));
+        List<Integer> ls = new ArrayList<>();
+        ls.add(8);
+        ls.add(9);
+        ls.add(7);
+        ls.add(2);
+        System.out.println(" Find largest value using list is  >>>>>>> " + findLargest(ls));
+        System.out.println(" Find minimum value is  >>>>>>> " +findMin(new int[] {1000, -1258, 12}));
 
     }
 }
