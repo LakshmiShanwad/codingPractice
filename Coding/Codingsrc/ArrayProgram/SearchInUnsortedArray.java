@@ -20,7 +20,7 @@ public class SearchInUnsortedArray {
     }
 
     public static void main(String[] args) {
-        int a[] ={8,2,56,15,1,6,2,-1,0,411};
+        int a[] ={8,2,56};
         System.out.println(search(a,0,a.length-1,56));
 
     }

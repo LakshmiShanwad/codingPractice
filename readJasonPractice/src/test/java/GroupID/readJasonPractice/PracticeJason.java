@@ -429,7 +429,20 @@ public class PracticeJason {
 				"    }\r\n" + 
 				"  ]\r\n" + 
 				"}";
-		return input;
+		String input1 = "{\n" +
+				"  \"id\":1,\n" +
+				"  \"Notification Settings\": {\n" +
+				"    \"notification\":[\n" +
+				"      {\n" +
+				"        \"method\": \"email\",\n" +
+				"        \"type\": \"eventCreatacion\"\n" +
+				"      }\n" +
+				"      ]\n" +
+				"  }\n" +
+				"}";
+		return input1;
+
+
 	}
 	
 	

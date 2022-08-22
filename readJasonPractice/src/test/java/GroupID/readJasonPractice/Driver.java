@@ -64,7 +64,7 @@ public class Driver extends PracticeJason {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		JSONObject js = new JSONObject(PracticeJason.inputMethod());
-		getKey(js, "url");
+		getKey(js, "method");
 
 	}
 
