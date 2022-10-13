@@ -4,6 +4,14 @@ package CodingPlatform;
 
 An alphanumeric string is a string consisting of lowercase English letters and digits. 1796*/
 public class SecondLargestDigitinString {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "dfa12321afd";
+		System.out.println(largesecond(s));
+
+	}
+
 
 	static int largesecond(String s) {
 		int count[] = new int[10];
@@ -32,12 +40,5 @@ public class SecondLargestDigitinString {
 		return -1;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		String s = "dfa12321afd";
-		System.out.println(largesecond(s));
-
-	}
 
 }
