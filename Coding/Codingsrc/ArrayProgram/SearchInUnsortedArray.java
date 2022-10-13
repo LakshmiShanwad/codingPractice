@@ -2,7 +2,7 @@ package ArrayProgram;
 
 public class SearchInUnsortedArray {
 
-    // this program will find the a value in unsorted array without doing sorting
+    // this program will find  a value in unsorted array without doing sorting
     // time complexity will be O[n/2]
 
     public static String search(int[] a , int start, int end, int x)

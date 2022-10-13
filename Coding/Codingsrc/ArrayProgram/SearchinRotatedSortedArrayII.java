@@ -29,7 +29,7 @@ public class SearchinRotatedSortedArrayII {
     public static boolean searchtargetinRoatedArray(int[] array, int target) {
         int low = 0;
         int high = array.length-1;
-        while(low<=high)
+        while(low<=high)   //2,5,6,0,0,1,2
         {
             if(target==array[low] || target==array[high])
             {
