@@ -3,6 +3,7 @@ package ArrayProgram;
 import java.util.HashMap;
 
 // find the continous subarray whose sum will make a given target and return the index and value of the same
+//incomplete
 public class Subarraywiththegivensum {
     public static void solve(int[] input, int targetsum) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();

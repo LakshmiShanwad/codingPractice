@@ -3,7 +3,9 @@ package ArrayProgram;
 import org.jetbrains.annotations.Contract;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class FindlargestNumber {
     // Find largest number without using sorting
@@ -95,8 +97,28 @@ public class FindlargestNumber {
         return n;
     }
 
+    public static int findLargestusingPQ(int[] nums)
+    {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        for (int i = 0;i< nums.length;i++)
+        {
+            pq.add(nums[i]);
+        }
+        return pq.poll();
+    }
+
+    public static int findSmallestusingPQ(int nums[])
+    {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int i=0;i<nums.length;i++)
+        {
+            pq.add(nums[i]);
+        }
+        return pq.poll();
+    }
     public static void main(String args[]) {
         System.out.println(" Find laregst value is  >>>>>>> " + findLargest(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
+        System.out.println(" Find laregst value is  PQ>>>>>>> " + findLargestusingPQ(new int[]{1000, 1258, 12, 1, 2, 9, 5, 23}));
         System.out.println(" Find 2nd largest value is  >>>>>>> " + secondLargest(new int[]{100, 25485, -987455455}));
         System.out.println(" Find 3rd largest value is  >>>>>>> " + threeLargest(new int[]{9, 8, 7}));
         List<Integer> ls = new ArrayList<>();
@@ -106,6 +128,7 @@ public class FindlargestNumber {
         ls.add(2);
         System.out.println(" Find largest value using list is  >>>>>>> " + findLargest(ls));
         System.out.println(" Find minimum value is  >>>>>>> " +findMin(new int[] {1000, -1258, 12}));
+        System.out.println(" Find minimum value is  PQ>>>>>>> " + findSmallestusingPQ(new int[]{1000, -1258, 12}));
 
     }
 }
