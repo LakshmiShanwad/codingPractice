@@ -24,7 +24,8 @@ public class KokoBanana {
         int speed = Integer.MAX_VALUE;
 
         while (low <= high) {
-            int sp = low + ((high - low) / 2); // avoid overflow because we are working not on index but on value;
+            int sp = low + ((high - low) / 2); //
+            // avoid overflow because we are working not on index but on value;
             if (isPossibe(pile, sp, h)) {
                 speed = sp;
                 high = sp -1;
